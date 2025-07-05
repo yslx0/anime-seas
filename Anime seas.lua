@@ -1,5 +1,3 @@
--- Mizzy Hub Fluent Edition by ayoei(4awty) & yslx0
--- Multi-seleção de mobs, detecção automática de mobs ao trocar de mundo/mapa, AutoFarm, AutoPunch, Killaura, GUIs, Discord, Destroy GUI
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
@@ -29,8 +27,8 @@ local Tabs = {
 
 local Options = Fluent.Options
 
-----------------------[ MOBS DINÂMICOS ]---------------------
-local mobsFolderPath = {"Client", "Maps", "Demon Slayer", "Mobs"} -- Caminho padrão
+
+local mobsFolderPath = {"Client", "Maps", "Demon Slayer", "Mobs"} 
 local mobsFolder = nil
 local mobNames = {}
 local function getMobsFolder()
@@ -61,7 +59,7 @@ end
 updateMobNames()
 local selectedMobs = {}
 
-----------------------[ AUTOFARM MULTI MOB ]---------------------
+
 local autoFarmEnabled = false
 local autoFarmLoop = nil
 
